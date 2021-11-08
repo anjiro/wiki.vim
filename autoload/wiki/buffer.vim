@@ -63,6 +63,7 @@ function! s:init_buffer_commands() abort " {{{1
         \ WikiTagRename call wiki#tags#rename_ask(<f-args>)
 
   command! -buffer          WikiFzfToc    call wiki#fzf#toc()
+	command! -buffer          CtrlPWikiToc  call ctrlp#init(ctrlp#wiki#toc#id())
 
   if b:wiki.in_journal
     command! -buffer -count=1 WikiJournalPrev       call wiki#journal#go(-<count>)
