@@ -14,6 +14,7 @@ call add(g:ctrlp_ext_vars, {
       \ 'sname': 'wt',
       \ 'type': 'line',
       \ 'opmul': 0,
+			\ 'sort': 0,
       \ })
 
 let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)
